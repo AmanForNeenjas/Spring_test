@@ -18,4 +18,16 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
+      - ApplyOutOfSyncOnly=true
+      - PruneLast=true
+      - Replace=true
+      - SkipDryRunOnMissingResource=true
+      - Force=true
+      - ServerSideApply=true
+  ignoreDifferences:
+    - group: ""
+      kind: Service
+      jsonPointers:
+        - /spec/clusterIP
+        - /spec/ports/0/nodePort
 
