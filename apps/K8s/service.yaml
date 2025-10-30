@@ -13,3 +13,10 @@ spec:
       targetPort: 8080   # Port your app listens on
       nodePort: 30080    # Port exposed on your machine
 #  type: LoadBalancer
+#  loadBalancerIP: <your-desired-static-ip>
+#  ports:
+#    - protocol: TCP
+#      port: 80           # External port
+#      targetPort: 8080   # Port your app listens on
+#  selector:
+#    app: spring-app
