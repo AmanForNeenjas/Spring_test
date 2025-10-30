@@ -33,3 +33,8 @@ spec:
         - /spec/ports/1/nodePort
     - group: apps
       kind: Deployment 
+      jsonPointers:
+        - /spec/replicas
+        - /spec/template/spec/containers/0/image
+        - /spec/template/spec/containers/0/imagePullPolicy
+        - /spec/template/spec/containers/0/resources
