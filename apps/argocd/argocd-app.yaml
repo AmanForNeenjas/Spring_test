@@ -30,4 +30,10 @@ spec:
       jsonPointers:
         - /spec/clusterIP
         - /spec/ports/0/nodePort
+    - group: apps
+      kind: Deployment
+      jsonPointers:
+        - /spec/replicas
+        - /spec/template/spec/containers/0/imagePullPolicy
+        - /spec/template/spec/containers/0/resources
 
